@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Load js File at head -->
+        <template id="my_custom_js_asset_head" name="my_custom_js assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/pos_prevent_payment_without_guests/static/src/js/odoo.js"/>
+            <script type="text/javascript" src="/pos_prevent_payment_without_guests/static/src/js/script.js"/>
+        </xpath>
+        </template>
+    </data>
+</odoo>
